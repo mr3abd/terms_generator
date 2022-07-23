@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Terms Generator.
 
-Things you may want to cover:
+## Project Details:
 
-* Ruby version
+* Environment
 
-* System dependencies
+  > Ruby 3.0.3
 
-* Configuration
+  > Rails 7.0.3.1
 
-* Database creation
+  > PostgreSQL
 
-* Database initialization
+  
+---
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+You'll need to do a few things to get up-and-running.  Here are a few items:
 
-* Deployment instructions
+* Install all the necessary gems with ```bundle install```
+* Create your database with ```rails db:create```
+* Update your database with ```rails db:migrate```
+* Start your web server with ```rails s```
+* install overcommit ```overcommit --install```
+* sign overcommit ```overcommit --sign```
 
-* ...
+---

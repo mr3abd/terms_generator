@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+
+# Seed Sections
+ActiveRecord::Base.transaction do
+  2.times { Section.create }
+  10.times { Clause.create(body: Faker::Quote.famous_last_words, section: Section.sample_random) }
+end
+
