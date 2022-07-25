@@ -1,0 +1,41 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+
+Style/Documentation:
+    Enabled: false
+Style/HashEachMethods:
+    Enabled: true
+Style/HashTransformKeys:
+    Enabled: true
+Style/HashTransformValues:
+    Enabled: true
+Lint/StructNewOverride:
+    Enabled: true
+Lint/RaiseException:
+    Enabled: true
+Layout/SpaceAroundMethodCallOperator:
+    Enabled: true
+Style/ExponentialNotation:
+    Enabled: true
+Style/FrozenStringLiteralComment:
+    EnforcedStyle: never
+Metrics/BlockLength:
+    Exclude:
+    - spec/**/*
+    - config/**/*
+    - lib/tasks/auto_annotate_models.rake
+Layout/LineLength:
+    Max: 120
+Rails/UniqueValidationWithoutIndex:
+    Enabled: false
+Rails/RakeEnvironment:
+  Exclude:
+  - lib/tasks/auto_annotate_models.rake
+Style/RedundantFetchBlock:
+  Exclude:
+  - config/puma.rb
+Style/GlobalStdStream:
+  Exclude:
+  - config/environments/production.rb
