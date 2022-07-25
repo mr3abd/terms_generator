@@ -1,2 +1,9 @@
-<h1>Clauses#index</h1>
-<p>Find me in app/views/clauses/index.html.erb</p>
+<% @sections.each do |section| %>
+  <ul>
+    <%= "SECTION-#{section.id}" %>
+    <% section.clauses.each do |clause| %>
+      <li > <b> <%= "CLAUSE-#-#{clause.id}" %> </b><%= clause.body %></li>
+      <% end %>
+  </ul>
+
+<% end %>

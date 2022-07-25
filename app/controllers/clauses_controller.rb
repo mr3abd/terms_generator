@@ -1,5 +1,5 @@
 class ClausesController < ApplicationController
   def index
-    @section = Section.all
+    @sections = Section.all
   end
 end
